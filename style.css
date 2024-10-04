@@ -21,9 +21,9 @@ header {
 /* Styles specific to the workout cards */
 .workout-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px; /* Adjust spacing between cards */
-    margin: 20px; /* Add some margin to the container */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid layout */
+    gap: 20px;
+    padding: 40px;
 }
 
 .workout-card {
