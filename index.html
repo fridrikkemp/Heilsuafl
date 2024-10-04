@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heilsuafl</title>
+    <link rel="icon" href="/images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hero-section">
+            <nav class="navbar">
+                <h1 class="logo">Heilsuafl</h1>
+                <ul>
+                    <li><a href="uppskriftir.html">Uppskriftir</a></li>
+                    <li><a href="raektarplon.html">Ræktarplön</a></li>
+                    <li><a href="myndbond.html">Myndbönd</a></li>
+                    <li><a href="hafa_samband.html">Hafa Samband</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1 class="frontpage">Velkomin á Heilsuafl</h1>
+                <p style="text-shadow: 2px 2px 2px rgba(0,0,0, 0.25);">Placehoder placeholder placeholder placeholder </p>
+                <a href="uppskriftir.html" class="hero-btn">Uppskriftir</a>
+                <a href="raektarplon.html" class="hero-btn">Ræktarplön</a>
+                <a href="myndbond.html" class="hero-btn">Myndbönd</a>
+            </div>
+        </div>
+    </header>
+    <main>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("JavaScript virkar!"); // Check if this prints in the console
+
+            const images = [
+                'heroimg/hero1.jpg',
+                'heroimg/hero2.jpg',
+                'heroimg/hero3.jpg',
+                'heroimg/hero4.jpg'
+            ];
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+            console.log(randomImage); // Check if the image path is correct
+        
+            document.querySelector('.hero-section').style.backgroundImage = `url(${randomImage})`;
+        });
+        
+                </script>
+</body>
+</html>
