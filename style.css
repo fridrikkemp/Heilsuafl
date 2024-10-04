@@ -18,6 +18,44 @@ header {
     position: relative;
     width: 100%;
 }
+/* Styles specific to the workout cards */
+.workout-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Adjust spacing between cards */
+    margin: 20px; /* Add some margin to the container */
+}
+
+.workout-card {
+    border: 1px solid #ccc; /* Add border to the card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    text-align: center; /* Center text in the card */
+    padding: 10px; /* Add padding inside the card */
+    background-color: #fff; /* Card background color */
+}
+
+.workout-card img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.workout-card h3 {
+    margin: 10px 0; /* Spacing above and below the title */
+}
+
+.workout-card p {
+    margin: 10px 0; /* Spacing above and below the description */
+    text-align: left; /* Align text to the left */
+}
+
+.time {
+    display: block; /* Make the time a block element */
+    margin-top: 10px; /* Space above the time */
+    font-weight: bold; /* Bold time text */
+}
+
+
 
 .titill {
     margin-left: 10px; /* Left margin to keep it off the edge */
@@ -192,13 +230,11 @@ header {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #4caf50;
-    color: white;
-    font-size: 1rem;
+    background-color: #f1f1f1; /* Light gray background */
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Add some padding to the footer */
+    margin-top: 40px; /* Add margin to push the footer down */
 }
-
 /* Grid Layout for Recipe and Workout Cards */
 .grid-container {
     display: grid;
