@@ -376,7 +376,6 @@ footer {
 }
 
 /* Responsive Styles */
-/* Responsive Styles */
 @media (max-width: 768px) {
     .cards-container {
         flex-direction: column;
@@ -391,6 +390,11 @@ footer {
     .navbar {
         flex-direction: column;
         padding: 10px;
+        font-size: 12pt;
+    }
+    .main-navbar {
+        flex-direction: column;
+        padding: 10px;
         font-size: 10pt; /* Smaller navbar text size */
         position: absolute; /* Align to the top */
         top: 0; /* Position it at the top */
@@ -399,22 +403,20 @@ footer {
         z-index: 10; /* Ensure it stays on top */
     }
 
+    .main-navbar ul {
+        flex-direction: row; /* Change to horizontal */
+        justify-content: center; /* Center items */
+        gap: 20px; /* Space between items */
+    }
     .navbar ul {
         flex-direction: row; /* Change to horizontal */
         justify-content: center; /* Center items */
         gap: 20px; /* Space between items */
     }
 
-    /* Title Adjustments */
-    .frontpage {
-        font-size: 2rem; /* Smaller title size on mobile */
-        margin-top: 60px; /* Ensure space for navbar */
-        text-align: center; /* Center align title */
-    }
-
     /* Hero Section Adjustments */
     .hero-content h2 {
-        font-size: 2.5rem; /* Adjust title size */
+        font-size: 2.5rem;
     }
 
     .hero-btn {
