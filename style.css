@@ -10,58 +10,57 @@
 body {
     background-color: #f0f2f5;
     color: #000000;
-    margin: 0; /* Ensure no margin */
-    padding: 0; /* Ensure no padding */
+    margin: 0;
+    padding: 0;
 }
 
 header {
     position: relative;
     width: 100%;
 }
+
 /* Styles specific to the workout cards */
 .workout-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 40px;
 }
 
 .workout-card {
-    border: 1px solid #ccc; /* Add border to the card */
-    border-radius: 8px; /* Rounded corners */
-    overflow: hidden; /* Prevent overflow */
-    text-align: center; /* Center text in the card */
-    padding: 10px; /* Add padding inside the card */
-    background-color: #fff; /* Card background color */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .workout-card img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 .workout-card h3 {
-    margin: 10px 0; /* Spacing above and below the title */
+    margin: 10px 0;
 }
 
 .workout-card p {
-    margin: 10px 0; /* Spacing above and below the description */
-    text-align: left; /* Align text to the left */
+    margin: 10px 0;
+    text-align: left;
 }
 
 .time {
-    display: block; /* Make the time a block element */
-    margin-top: 10px; /* Space above the time */
-    font-weight: bold; /* Bold time text */
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-
-
 .titill {
-    margin-left: 10px; /* Left margin to keep it off the edge */
-    margin-top: 20px; /* Initial top margin */
-    text-align: left; /* Left-aligned by default */
-    color: #000000; /* Gray color similar to title */
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: left;
+    color: #000000;
 }
 
 .texti {
@@ -83,55 +82,59 @@ header {
     overflow: hidden;
 }
 
+/* Navbar */
 .navbar {
     width: 100%;
-    padding: 20px; /* Padding remains */
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centering navbar */
     align-items: center;
-    position: absolute; /* Keep navbar absolute for positioning */
-    top: 0; /* Stick to top */
     font-size: 15pt;
-    background-color: transparent; /* Remove background color entirely */
-}
-
-.frontpage {
-    font-size: 3.3rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-    margin: 0; /* Ensure no margin */
-}
-
-.logo {
-    font-size: 3rem; /* Adjusted for better visibility */
-    font-weight: 600;
+    background-color: transparent;
+    z-index: 10;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Space between menu items */
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .navbar ul li {
-    margin-left: 20px;
+    margin: 0 10px; /* Adjusting margin for spacing */
 }
 
 .navbar ul li a {
-    --switch: calc((var(--light) - var(--threshold)) * -100%);
     color: hsl(0, 0%, var(--switch));
     text-decoration: none;
     font-weight: 550;
     transition: color 0.7s ease;
+    white-space: nowrap;
 }
 
 .navbar ul li a:hover {
     color: #ffcc00;
 }
 
+.frontpage {
+    font-size: 3.3rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 .hero-content {
     max-width: 600px;
     padding: 20px;
-    margin-top: 0; /* Ensure there's no margin */
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-content h2 {
@@ -152,6 +155,7 @@ header {
     border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin: 10px 0;
 }
 
 .hero-btn:hover {
@@ -169,10 +173,10 @@ header {
 
 /* Style for the anchor tag */
 .card-link {
-    display: block; /* Ensure block-level behavior */
-    width: 100%; /* Make sure the anchor takes full width */
-    max-width: 300px; /* Set a max width */
-    height: auto; /* Ensure the height grows with content */
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     text-decoration: none;
     color: inherit;
 }
@@ -185,7 +189,7 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     padding: 20px;
-    width: 100%; /* Ensure the card takes full width of the anchor */
+    width: 100%;
 }
 
 .card img {
@@ -230,16 +234,17 @@ header {
 
 /* Footer */
 footer {
-    background-color: #f1f1f1; /* Light gray background */
-    text-align: center; /* Center footer text */
-    padding: 10px 0; /* Add some padding to the footer */
-    margin-top: 40px; /* Add margin to push the footer down */
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
 }
+
 /* Grid Layout for Recipe and Workout Cards */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; /* Gap between grid items */
+    gap: 20px;
     padding: 40px;
 }
 
@@ -252,10 +257,10 @@ footer {
     text-align: center;
     padding: 20px;
     margin: 10px;
-    height: 450px; /* Set a fixed height */
+    height: 450px;
     display: flex;
-    flex-direction: column; /* Ensure elements stack vertically */
-    justify-content: space-between; /* Space out content evenly */
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card img {
@@ -273,10 +278,10 @@ footer {
 .card p {
     color: #666;
     margin: 10px 0;
-    flex-grow: 1; /* Allow paragraph text to take available space */
-    overflow: hidden; /* Prevent text overflow */
-    text-overflow: ellipsis; /* Show ellipsis if text overflows */
-    white-space: nowrap; /* Prevent text from wrapping */
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card .calories,
@@ -371,66 +376,58 @@ footer {
 }
 
 /* Responsive Styles */
+/* Responsive Styles */
 @media (max-width: 768px) {
     .cards-container {
         flex-direction: column;
-        gap: 20px; /* Reduced gap for mobile */
+        gap: 20px;
     }
 
     .card {
-        width: 80%; /* Adjust card width for mobile */
-        margin: 20px auto; /* Center cards */
+        width: 100%;
     }
 
+    /* Navbar Adjustments */
     .navbar {
-            flex-direction: column; /* Stack navigation items vertically */
-            position: top; /* Change position to relative for mobile */
-            margin-top: 10px; /* Space below the title */
-            padding: 10px; /* Padding for mobile */
-            font-size: 12pt;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 10pt; /* Smaller navbar text size */
+        position: absolute; /* Align to the top */
+        top: 0; /* Position it at the top */
+        left: 0; /* Align it to the left */
+        right: 0; /* Align it to the right */
+        z-index: 10; /* Ensure it stays on top */
     }
 
-    .titill {
-        text-align: center; /* Center title on mobile */
+    .navbar ul {
+        flex-direction: row; /* Change to horizontal */
+        justify-content: center; /* Center items */
+        gap: 20px; /* Space between items */
     }
 
+    /* Title Adjustments */
+    .frontpage {
+        font-size: 2rem; /* Smaller title size on mobile */
+        margin-top: 60px; /* Ensure space for navbar */
+        text-align: center; /* Center align title */
+    }
+
+    /* Hero Section Adjustments */
     .hero-content h2 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Adjust title size */
     }
 
-    .contact-card {
-        width: 90%;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr; /* One column on mobile */
-    }
-
-    .page-header {
-        padding: 40px;
-        text-align: center;
-        background-color: #f4f4f4;
-        border-bottom: 2px solid #ddd;
-    }
-
-    .page-header h2 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-
-    .page-header p {
-        font-size: 1.1rem;
-        color: #555;
+    .hero-btn {
+        padding: 10px 20px;
     }
 }
 
-
 @media (max-width: 480px) {
-    .cardmain {
-        width: calc(100% - 20px); /* One card per row on very small screens */
+    .navbar ul li {
+        margin: 0; /* Reset margin for smaller screens */
     }
 
-    .navbar ul li {
-        margin-left: 0; /* Remove margin for mobile */
+    .hero-btn {
+        padding: 8px 16px;
     }
 }
