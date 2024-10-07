@@ -40,6 +40,7 @@ header {
     width: 100%; /* Make the image responsive */
     height: 200px; /* Set a fixed height for uniformity */
     object-fit: cover; /* Maintain aspect ratio, cover the area */
+    border-radius: 10px 10px 0 0;
 }
 
 .workout-card h3 {
