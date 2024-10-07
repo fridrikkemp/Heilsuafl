@@ -244,49 +244,53 @@ footer {
     padding: 40px;
 }
 
+
 .card {
     background-color: white;
     border-radius: 15px;
-    overflow: hidden;
+    overflow: hidden; /* Prevent content overflow */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     margin: 10px;
-    height: 450px; /* Set a fixed height */
     display: flex;
-    flex-direction: column; /* Ensure elements stack vertically */
+    flex-direction: column; /* Stack elements vertically */
     justify-content: space-between; /* Space out content evenly */
+    height: 450px; /* Increased fixed height for all cards */
 }
 
 .card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 220px; /* Increased fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
     border-radius: 10px 10px 0 0;
 }
 
 .card h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
+    font-size: 1.2rem; /* Reduced font size for the title */
+    margin-top: 0px 0;
 }
 
 .card p {
     color: #666;
-    margin: 10px 0;
+    margin-top: 0px 0;
     flex-grow: 1; /* Allow paragraph text to take available space */
-    overflow: hidden; /* Prevent text overflow */
+    overflow: hidden; /* Prevent overflow */
     text-overflow: ellipsis; /* Show ellipsis if text overflows */
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: normal; /* Allow text to wrap normally */
+    max-height: 100px; /* Set a max height for the text to fit */
+    font-size: 0.9rem; /* Reduced font size for the description */
 }
 
 .card .calories,
 .card .time {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Adjusted font size for other text */
     font-weight: 600;
     color: #4caf50;
     margin-top: 10px;
 }
+
 
 /* Contact Form */
 .contact-container {
