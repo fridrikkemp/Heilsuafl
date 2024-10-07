@@ -7,6 +7,8 @@
     <title>Heilsuafl | Myndbönd</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> <!-- Include the JavaScript file -->
+
     <style>
         /* Centering the grid container */
         .grid-container {
@@ -54,23 +56,25 @@
     </style>
 </head>
 <body class="other-page">
-
     <header>
         <nav class="navbar">
-            <h1 class="logo"></h1>
-            <ul>
-                <li><a href="index.html">Heim</a></li>
-                <li><a href="uppskriftir.html">Uppskriftir</a></li>
-                <li><a href="raektarplon.html">Ræktarplön</a></li>
-                <li><a href="hafa_samband.html">Hafa Samband</a></li>
-            </ul>
+            <h1 class=""></h1>
+
         </nav>
         <div class="page-header">
             <h1 class="titill">Myndbönd</h1>
             <p class="texti">Skemmtileg myndbönd</p>
         </div>
     </header>
-
+    <div class="mobile-nav">
+        <button class="nav-toggle" aria-expanded="false">☰</button>
+        <ul class="nav-options" aria-hidden="true">
+            <li><a href="index.html">Heim</a></li>
+            <li><a href="uppskriftir.html">Uppskriftir</a></li>
+            <li><a href="raektarplon.html">Ræktarplön</a></li>
+            <li><a href="myndbond.html">Myndbönd</a></li>
+        </ul>
+    </div>
     <main>
         <section id="workouts" class="grid-container">
             <div class="video-card">
@@ -79,16 +83,9 @@
             </div>
             <div class="video-card">
                 <video src="video/vidtalmotuneiti.mp4" alt="Myndband" controls></video>
-                <h3>Viðtal við hjúkrunarfræðing</h3>
+                <h3>Viðtal við mötuneyti</h3>
             </div>
-            <div class="video-card">
-                <video src="video/vidtalmotuneiti.mp4" alt="Myndband" controls></video>
-                <h3>Viðtal við hjúkrunarfræðing</h3>
-            </div>
-            <div class="video-card">
-                <video src="video/vidtalmotuneiti.mp4" alt="Myndband" controls></video>
-                <h3>Viðtal við hjúkrunarfræðing</h3>
-            </div>
+
             <!-- Additional video cards can be added below -->
         </section>
     </main>
