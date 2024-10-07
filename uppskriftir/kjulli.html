@@ -6,6 +6,8 @@
     <title>Heilsuafl | Fylltar Kjúklingabru-ingur</title>
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script> <!-- Include the JavaScript file -->
+
     <style>
         .recipe {
             max-width: 800px;
@@ -39,17 +41,20 @@
    <header>
     <nav class="navbar">
         <h1 class="logo"></h1>
-        <ul>
-            <li><a href="../index.html">Heim</a></li>
-            <li><a href="../raektarplon.html">Ræktarplön</a></li>
-            <li><a href="../hafa_samband.html">Hafa Samband</a></li>
-        </ul>
     </nav>
     <div class="page-header">
         <h1 class="titill">Fylltar Kjúklingabru-ingur með ostum og spínati</h1>
     </div>
 </header>
-
+<div class="mobile-nav">
+    <button class="nav-toggle" aria-expanded="false">☰</button>
+    <ul class="nav-options" aria-hidden="true">
+        <li><a href="index.html">Heim</a></li>
+        <li><a href="uppskriftir.html">Uppskriftir</a></li>
+        <li><a href="raektarplon.html">Ræktarplön</a></li>
+        <li><a href="myndbond.html">Myndbönd</a></li>
+    </ul>
+</div>
 <main>
     <section class="recipe">
         <h2 class="texti">Uppskrift fyrir 4 (kvöldmatur)</h2>
